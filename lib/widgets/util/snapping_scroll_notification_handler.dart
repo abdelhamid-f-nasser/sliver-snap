@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:sliver_snap/widgets/index.dart';
 
 class SnappingScrollNotificationHandler {
@@ -119,15 +118,6 @@ class SnappingScrollNotificationHandler {
     double expandThresholdPosition,
   ) {
     return currentScrollingPosition < expandThresholdPosition;
-  }
-
-  /// Adds and triggers haptic feedback
-  ///
-  ///
-  void _addHapticFeedback(ValueNotifier<bool> isCollapsed) {
-    if (isCollapsed.value && shouldAddHapticFeedback) {
-      HapticFeedback.mediumImpact();
-    }
   }
 
   /// Updates the isCollapsed value as the user scrolls up and down
