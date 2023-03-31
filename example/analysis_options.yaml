@@ -1,0 +1,81 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: true
+  plugins:
+    dart_code_metrics
+  errors:
+    avoid_print: error
+    must_be_immutable: error
+    invalid_use_of_visible_for_testing_member: error
+    prefer_const_constructors: error
+    unused_import: error
+    require_trailing_commas: error
+    lines_longer_than_80_chars: error
+    unused_catch_clause: error
+    avoid_catches_without_on_clauses: error
+    prefer_final_locals: error
+    always_declare_return_types: error
+    cast_nullable_to_non_nullable: error
+    avoid_final_parameters: error
+    unnecessary_to_list_in_spreads: error
+    unnecessary_await_in_return: error
+    avoid_positional_boolean_parameters: error
+    noop_primitive_operations: error
+    use_string_buffers: error
+    type_annotate_public_apis: error
+    leading_newlines_in_multiline_strings: error
+    use_setters_to_change_properties: error
+    unnecessary_statements: error
+    avoid_multiple_declarations_per_line: error
+    avoid_bool_literals_in_conditional_expressions: error
+    use_named_constants: error
+    avoid_field_initializers_in_const_classes: error
+    prefer_null_aware_method_calls: error
+    # -- ignoring rules -- #
+    avoid_setters_without_getters: ignore
+    sort_pub_dependencies: ignore
+    avoid_classes_with_only_static_members: ignore
+    depend_on_referenced_packages: ignore
+    avoid_dynamic_calls: ignore
+
+dart_code_metrics:
+  rules:
+    - avoid-dynamic: true
+    - avoid-redundant-async: true
+    - avoid-passing-async-when-sync-expected: true
+    - avoid-redundant-async: true
+    - avoid-unnecessary-type-assertions: true
+    - avoid-unnecessary-type-casts: true
+    - avoid-unrelated-type-assertions: true
+    - avoid-unused-parameters: true
+    - avoid-nested-conditional-expressions: true
+    - newline-before-return: true
+    - no-boolean-literal-compare: true
+    - no-empty-block: true
+    - prefer-trailing-comma: true
+    - prefer-conditional-expressions: true
+    - no-equal-then-else: true
+    - prefer-moving-to-variable: true
+    - prefer-match-file-name: true
+
+linter:
+  rules:
+    - require_trailing_commas: true
+    - camel_case_types: true
+    - library_names: true
+    - avoid_catching_errors: true
+    - avoid_empty_else: true
+    - unnecessary_brace_in_string_interps: true
+    - avoid_redundant_argument_values: true
+    - slash_for_doc_comments: true
+    - sort_constructors_first: true
+    - use_build_context_synchronously: true
+    - prefer_single_quotes: true
+
+    - sort_pub_dependencies: false
+    - avoid_classes_with_only_static_members: false
+    - depend_on_referenced_packages: false
+    - avoid_dynamic_calls: false
+
