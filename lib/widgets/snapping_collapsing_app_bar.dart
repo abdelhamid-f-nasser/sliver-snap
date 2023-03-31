@@ -161,10 +161,10 @@ class SnappingCollapsingAppBar extends HookWidget {
   ///
   /// - Otherwise, the opacity is [scrollPercentage].
   ///
-  /// Throws an [ArgumentError] if [scrollPercentage] is not between 0 and 1.0.
+  /// Returns 1.0 if the [scrollPercentage] is not between 0.0 and 1.0.
   ///
   /// Params:
-  /// - [scrollPercentage]: the percentage of the scroll position, a double value
+  /// - [scrollPercentage] : the percentage of the scroll position, a double value
   /// Returns:
   /// - The calculated opacity, a double value
   double _calculateOpacity(double scrollPercentage) {
@@ -173,7 +173,7 @@ class SnappingCollapsingAppBar extends HookWidget {
     const double maxScrollPercentage = 1.0;
 
     if (scrollPercentage < 0 || scrollPercentage > maxScrollPercentage) {
-      throw ArgumentError('scrollPercentage must be between 0 and 1.0');
+      return 1.0;
     }
 
     if (scrollPercentage < opacityThreshold) {
