@@ -63,7 +63,11 @@ class SnappingAppBarBody extends StatelessWidget {
               centerTitle: false,
               pinned: pinned,
               elevation: 0,
-              title: collapsedBar,
+              title: AnimatedOpacity(
+                duration: const Duration(milliseconds: 200),
+                opacity: isCollapsed ? 1 : 0,
+                child: collapsedBar,
+              ),
               automaticallyImplyLeading: false,
               backgroundColor: isCollapsed
                   ? collapsedBackgroundColor
