@@ -38,7 +38,6 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
 )
 
 # Table of contents
-- [Table of contents](#table-of-contents)
 - [Preview](#preview)
 - [Installing](#installing)
     - [1. Depend on it](#1-depend-on-it)
