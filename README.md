@@ -7,7 +7,7 @@ snaps to the appropriate mode when the user stops scrolling midway. 💻 It's hi
 provides a user-friendly experience. Say goodbye to manual implementation and make your Flutter app
 more interactive and intuitive with Sliver Snap. 🤯 </p>
 
-[//]: # (Add Badges here)
+<!-- [//]: # (Add Badges here)
 [//]: # (
 <p align="center">
 [//]: # (  <a href="https://flutter.dev">
@@ -35,9 +35,10 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
 [//]: # (      alt="Donate" />
 [//]: # (  </a>
 [//]: # (</p><br>
-)
+) -->
 
 # Table of contents
+- [Table of contents](#table-of-contents)
 - [Preview](#preview)
 - [Installing](#installing)
     - [1. Depend on it](#1-depend-on-it)
@@ -47,6 +48,7 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
     - [Properties](#properties)
     - [Extra Components](#extra-components)
       - [`CollapsedAppBarContent` Widget](#collapsedappbarcontent-widget)
+      - [Please check the below example for a way to add a `leading` widget only to the `expandedContent`](#please-check-the-below-example-for-a-way-to-add-a-leading-widget-only-to-the-expandedcontent)
 - [Additional information](#additional-information)
 
 <br/>
