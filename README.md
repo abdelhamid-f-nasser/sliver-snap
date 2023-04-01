@@ -154,6 +154,8 @@ import 'package:sliver_snap/sliver_snap.dart';
 | scrollBehavior            | ScrollBehaviour?         | ----------------------- | How the scrollable widgets behave, either `Material` or `Cupertino` Scrolling behaviors.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | onCollapseStateChanged    | CollapsingStateCallback? | ----------------------- | Callback which is called when the is collapsed or expanded; used to find out the collapsed/expanded state, scrolling offset and the max Extent of the scroll.                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
+
+This is the CollapsingStateCallback function signature:
 ```dart
 typedef CollapsingStateCallback = void Function(
   bool isCollapsed,
@@ -168,9 +170,9 @@ The below are supplementary widgets that can help you build the appbar faster.
 
 #### `CollapsedAppBarContent` Widget
 This can be used to create a custom `collapsedContent` widget. It has the following properties:
-1. leading: This is the leading widget specifically for the `collapsedContent` Appbar. Don't use this with the `leading` widget for the whole Appbar. As they will overlap.
-2. title,
-3. trailing.
+1. leading: This is the `leading` widget specifically for the `collapsedContent` Appbar. Don't use this with the `leading` widget for the whole `Appbar`. As they will overlap.
+2. title: The middle widget between the `leading` and the `trailing` of the `collapsedContent` Appbar.,
+3. trailing: The widget that is displayed at the rightmost part of the `collapsedContent`.
 
 The below snippet demonstrates it's basic usage:
 
@@ -190,14 +192,17 @@ The below snippet demonstrates it's basic usage:
       ),
 ```
 
-Please check the below example for a way to add a `leading` widget only to the `expandedContent`
+
+#### Please check the below example for a way to add a `leading` widget only to the `expandedContent`
 
 ```dart
-@override
+class ExpandedWidget extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Column(...),
+        // Place whichever widget you want below, and it will show as a leading widget.
         const SafeArea(
           child: BackButton(
             color: Colors.white,
@@ -206,7 +211,10 @@ Please check the below example for a way to add a `leading` widget only to the `
       ],
     );
   }
+}
 ```
+
+
 
 and in such scenario, don't add the leading widget to the `CollapsedAppBarContent` widget
 or the `SliverSnap` widget.
