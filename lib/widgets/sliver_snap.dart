@@ -128,6 +128,17 @@ class SliverSnap extends HookWidget {
   ///
   final Widget? leading;
 
+  /// Provides Control of the AppBar's leading widget.
+  ///
+  /// When set to true, the framework will automatically add a leading widget
+  /// to the app bar or navigation bar. The widget will be either a [BackButton]
+  /// (if the [Navigator] has more than one page in the stack) or a drawer
+  /// [IconButton] (if a drawer is present in the scaffold).
+  ///
+  /// When set to false, no leading widget will be added automatically.
+  /// This is useful when you want to provide your own custom leading widget.
+  final bool automaticallyImplyLeading;
+
   ///The content that is shown below the appbar.
   ///In most cases it's just the page content.
   ///
@@ -183,6 +194,7 @@ class SliverSnap extends HookWidget {
     this.scrollController,
     this.scrollBehavior,
     this.onCollapseStateChanged,
+    this.automaticallyImplyLeading = false,
   });
 
   @override
@@ -235,6 +247,7 @@ class SliverSnap extends HookWidget {
         floating: floating,
         snap: snap,
         stretch: stretch,
+        automaticallyImplyLeading: automaticallyImplyLeading,
         body: body,
         scrollBehavior: scrollBehavior,
         collapsedBarHeight: collapsedBarHeight,

@@ -21,6 +21,7 @@ class SnappingAppBarBody extends StatelessWidget {
     this.actions,
     this.bottom,
     this.isCollapsed = false,
+    this.automaticallyImplyLeading = false,
   });
 
   final ScrollController scrollController;
@@ -42,6 +43,7 @@ class SnappingAppBarBody extends StatelessWidget {
   final Color? collapsedBackgroundColor;
   final Color? expandedBackgroundColor;
   final ScrollBehavior? scrollBehavior;
+  final bool automaticallyImplyLeading;
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +70,7 @@ class SnappingAppBarBody extends StatelessWidget {
                 opacity: isCollapsed ? 1 : 0,
                 child: collapsedBar,
               ),
-              automaticallyImplyLeading: false,
+              automaticallyImplyLeading: automaticallyImplyLeading,
               backgroundColor: isCollapsed
                   ? collapsedBackgroundColor
                   : expandedBackgroundColor,
