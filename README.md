@@ -96,7 +96,7 @@ import 'package:sliver_snap/sliver_snap.dart';
 # Basic Usage
 
 ```dart
-  SnappingCollapsingAppBar(
+  SliverSnap(
     onCollapseStateChanged: (isCollapsed, scrollingOffset, maxExtent) {},
     collapsedBackgroundColor: Colors.black,
     expandedBackgroundColor: Colors.transparent,

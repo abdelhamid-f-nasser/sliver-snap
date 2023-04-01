@@ -8,7 +8,7 @@ typedef CollapsingStateCallback = void Function(
   double maxExtent,
 );
 
-class SnappingCollapsingAppBar extends HookWidget {
+class SliverSnap extends HookWidget {
   final ScrollController? scrollController;
 
   /// The content that is shown when the appBar is expanded
@@ -161,7 +161,7 @@ class SnappingCollapsingAppBar extends HookWidget {
   /// Defaults to [Curves.easeInOut]
   final Curve? animationCurve;
 
-  const SnappingCollapsingAppBar({
+  const SliverSnap({
     super.key,
     required this.expandedContent,
     required this.collapsedContent,
