@@ -82,7 +82,7 @@ flutter pub add sliver_snap
 
 You can install packages from the command line with `Flutter`:
 
-```
+```bash
 $ flutter pub get
 ```
 
@@ -157,23 +157,20 @@ import 'package:sliver_snap/sliver_snap.dart';
 | onCollapseStateChanged    | CollapsingStateCallback? | N/A              | This is a callback function that is triggered when the bar is either collapsed or expanded. It can be used to customize the animation and behavior of the widget to better suit your needs.                                                                                                                                                                                                                                                        |
 
 
-### Extra Components
+# Extra Components
 
 The below are supplementary widgets that can help you build the appbar faster.
 
-#### `CollapsedAppBarContent` Widget
+### 1. Collapsed AppBar Content widget
+
 This can be used to create a custom `collapsedContent` widget. It has the following properties:
-1. leading: This is the `leading` widget specifically for the `collapsedContent` Appbar. Don't use this with the `leading` widget for the whole `Appbar`. As they will overlap.
+1. leading: This is the `leading` widget specifically for the `collapsedContent` Appbar. Don't add the `leading` widget to the `ExpandedContent` widget or the `SliverSnap` widget, as they might overlap.
 2. title: The middle widget between the `leading` and the `trailing` of the `collapsedContent` Appbar.,
 3. trailing: The widget that is displayed at the rightmost part of the `collapsedContent`.
 
-The below snippet demonstrates it's basic usage:
-
 ```dart
       CollapsedAppBarContent(
-        leading: const BackButton(
-          color: Colors.white,
-        ),
+        leading: const YourLeadingWidget(),
         title: const Text('title'),
         trailing: SizedBox(
           height: 40,
@@ -185,32 +182,18 @@ The below snippet demonstrates it's basic usage:
       ),
 ```
 
+### 2. Expanded Content widget
 
-#### Please check the below example for a way to add a `leading` widget only to the `expandedContent`
+This can be used to create a custom `expanded` widget. It has the following properties:
+1. leading: This is the `leading` widget specifically for the `expandedContent` Appbar. Don't add the `leading` widget to the `CollapsedAppBarContent` widget or the `SliverSnap` widget, as they might overlap.
 
 ```dart
-class ExpandedWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Column(...),
-        // Place whichever widget you want below, and it will show as a leading widget.
-        const SafeArea(
-          child: BackButton(
-            color: Colors.white,
-          ),
-        ),
-      ],
-    );
-  }
+  ExpandedContent(
+    child: Column(...),
+    leading: const YourLeadingWidget(),
+  );
 }
 ```
-
-
-
-and in such scenario, don't add the leading widget to the `CollapsedAppBarContent` widget
-or the `SliverSnap` widget.
 
 
 
