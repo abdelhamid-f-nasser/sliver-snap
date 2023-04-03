@@ -46,12 +46,12 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
     - [3. Import it](#3-import-it)
 - [Basic Usage](#basic-usage)
     - [Properties](#properties)
-    - [Extra Components](#extra-components)
-      - [`CollapsedAppBarContent` Widget](#collapsedappbarcontent-widget)
-      - [Please check the below example for a way to add a `leading` widget only to the `expandedContent`](#please-check-the-below-example-for-a-way-to-add-a-leading-widget-only-to-the-expandedcontent)
+- [Extra Components](#extra-components)
+    - [1. Collapsed AppBar Content widget](#1-collapsed-appbar-content-widget)
+    - [2. Expanded Content widget](#2-expanded-content-widget)
 - [Additional information](#additional-information)
 
-<br/>
+
 
 # Preview
 
