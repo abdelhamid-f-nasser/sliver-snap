@@ -8,8 +8,18 @@ class CollapsedAppBarContent extends StatelessWidget {
     this.trailing,
   });
 
+  /// The title of the app bar.
+  ///
   final Widget? title;
+
+  /// The leading widget of the app bar.
+  ///
+  /// It is usually a [BackButton] or a [CloseButton].
   final Widget? leading;
+
+  /// The trailing widget of the app bar.
+  ///
+  ///
   final Widget? trailing;
 
   @override

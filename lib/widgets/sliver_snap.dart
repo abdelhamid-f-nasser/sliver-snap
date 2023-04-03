@@ -8,7 +8,7 @@ typedef CollapsingStateCallback = void Function(
   double maxExtent,
 );
 
-class SnappingCollapsingAppBar extends HookWidget {
+class SliverSnap extends HookWidget {
   final ScrollController? scrollController;
 
   /// The content that is shown when the appBar is expanded
@@ -29,12 +29,119 @@ class SnappingCollapsingAppBar extends HookWidget {
 
   /// The height of the [collapsedContent]
   final double collapsedBarHeight;
+
+  /// Whether the app bar should become visible as soon as the user scrolls
+  /// towards the app bar.
+  ///
+  /// Otherwise, the user will need to scroll near the top of the scroll view to
+  /// reveal the app bar.
+  ///
+  /// If [snap] is true then a scroll that exposes the app bar will trigger an
+  /// animation that slides the entire app bar into view. Similarly if a scroll
+  /// dismisses the app bar, the animation will slide it completely out of view.
+  ///
+  /// ## Animated Examples
+  ///
+  /// The following animations show how the app bar changes its scrolling
+  /// behavior based on the value of this property.
+  ///
+  /// * App bar with [floating] set to false:
+  ///   {@animation 476 400 https://flutter.github.io/assets-for-api-docs/assets/material/app_bar.mp4}
+  /// * App bar with [floating] set to true:
+  ///   {@animation 476 400 https://flutter.github.io/assets-for-api-docs/assets/material/app_bar_floating.mp4}
+  ///
+  /// See also:
+  ///
+  ///  * [SliverAppBar] for more animated examples of how this property changes the
+  ///    behavior of the app bar in combination with [pinned] and [snap].
   final bool floating;
+
+  /// Whether the appbar will be fixed at the top of the scroll view
+  ///
+  /// meaning it will always be visible to the user
+  /// as they scroll through the content.
+  ///
+  /// Although the appbar can still change in size as the user scrolls,
+  /// it will not be scrolled out of view like other elements in the scroll view.
+  ///
+  /// ## Animated Examples
+  ///
+  /// The following animations show how the app bar changes its scrolling
+  /// behavior based on the value of this property.
+  ///
+  /// * App bar with [floating] set to false:
+  ///   {@animation 476 400 https://flutter.github.io/assets-for-api-docs/assets/material/app_bar.mp4}
+  /// * App bar with [floating] set to true:
+  ///   {@animation 476 400 https://flutter.github.io/assets-for-api-docs/assets/material/app_bar_floating.mp4}
+  ///
+  /// See also:
+  ///
+  ///  * [SliverAppBar] for more animated examples of how this property changes the
   final bool pinned;
+
+  /// Controls the behavior of a floating app bar when the user scrolls.
+  ///
+  /// When [snap] is false, the app bar will move smoothly with the content as the
+  /// user scrolls, and will be dismissed smoothly when the user scrolls down.
+  ///
+  /// When [snap] is true, the app bar will have a more rigid behavior. It will
+  /// snap into view when the user scrolls up and snap out of view when the user
+  /// scrolls down. Additionally, when the user interacts with any part of the
+  /// floating app bar, such as clicking on a [TextField], the app bar will snap
+  /// fully into view so that the user can see and interact with all of its
+  /// contents.
+  ///
+  /// ## Animated Examples
+  ///
+  /// The following animations show how the app bar changes its scrolling
+  /// behavior based on the value of this property.
+  ///
+  /// * App bar with [snap] set to false:
+  ///   {@animation 476 400 https://flutter.github.io/assets-for-api-docs/assets/material/app_bar_floating.mp4}
+  /// * App bar with [snap] set to true:
+  ///   {@animation 476 400 https://flutter.github.io/assets-for-api-docs/assets/material/app_bar_floating_snap.mp4}
+  ///
+  /// This property only applies to floating app bars.
+  ///
+  /// See also:
+  ///
+  ///  * [SliverAppBar], for more examples of how this property affects app bar
+  ///    behavior in combination with [SliverAppBar.snap] and [SliverAppBar.floating].
   final bool snap;
+
+  ///  Whether the app bar should stretch to fill the over-scroll area.
+  ///
+  ///  The appbar can still expand and contract as the user scrolls,
+  ///  but it  will also stretch when the user over-scrolls.
+  ///
   final bool stretch;
+
+  /// A list of action widgets to display in a row,
+  /// after the [collapsedContent] widget.
+  ///
   final List<Widget>? actions;
+
+  /// The leading widget at the start of the appbar,
+  /// typically an [Icon] or an [IconButton].
+  ///
+  /// It can also be a [BackButton].
+  ///
   final Widget? leading;
+
+  /// Provides Control of the AppBar's leading widget.
+  ///
+  /// When set to true, the framework will automatically add a leading widget
+  /// to the app bar or navigation bar. The widget will be either a [BackButton]
+  /// (if the [Navigator] has more than one page in the stack) or a drawer
+  /// [IconButton] (if a drawer is present in the scaffold).
+  ///
+  /// When set to false, no leading widget will be added automatically.
+  /// This is useful when you want to provide your own custom leading widget.
+  final bool automaticallyImplyLeading;
+
+  ///The content that is shown below the appbar.
+  ///In most cases it's just the page content.
+  ///
   final PreferredSizeWidget? bottom;
 
   /// The widget that is shown behind the [ExpandedContent]
@@ -48,6 +155,7 @@ class SnappingCollapsingAppBar extends HookWidget {
   ///  The background color of the collapsed appbar.
   final Color? collapsedBackgroundColor;
 
+  /// How the scrolling behaves, either Material or Cupertino.
   final ScrollBehavior? scrollBehavior;
 
   /// Callback that is called when the [ExpandedContent] is collapsed or expanded
@@ -64,28 +172,29 @@ class SnappingCollapsingAppBar extends HookWidget {
   /// Defaults to [Curves.easeInOut]
   final Curve? animationCurve;
 
-  const SnappingCollapsingAppBar({
+  const SliverSnap({
     super.key,
     required this.expandedContent,
     required this.collapsedContent,
     required this.body,
-    this.onCollapseStateChanged,
-    this.expandedContentHeight,
-    this.scrollController,
-    this.scrollBehavior,
-    this.floating = false,
     this.pinned = true,
+    this.collapsedBarHeight = 60.0,
+    this.animationDuration = const Duration(milliseconds: 300),
+    this.animationCurve = Curves.easeInOut,
     this.snap = false,
+    this.floating = false,
     this.stretch = false,
+    this.expandedContentHeight,
     this.bottom,
     this.leading,
     this.actions,
-    this.collapsedBarHeight = 60.0,
     this.backdropWidget,
     this.expandedBackgroundColor,
     this.collapsedBackgroundColor,
-    this.animationDuration = const Duration(milliseconds: 300),
-    this.animationCurve = Curves.easeInOut,
+    this.scrollController,
+    this.scrollBehavior,
+    this.onCollapseStateChanged,
+    this.automaticallyImplyLeading = false,
   });
 
   @override
@@ -138,6 +247,7 @@ class SnappingCollapsingAppBar extends HookWidget {
         floating: floating,
         snap: snap,
         stretch: stretch,
+        automaticallyImplyLeading: automaticallyImplyLeading,
         body: body,
         scrollBehavior: scrollBehavior,
         collapsedBarHeight: collapsedBarHeight,

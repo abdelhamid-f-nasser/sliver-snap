@@ -1,6 +1,7 @@
 import 'package:example/app/models/index.dart';
 import 'package:example/app/pages/index.dart';
 import 'package:flutter/material.dart';
+import 'package:sliver_snap/sliver_snap.dart';
 
 class ExpandedAppBarContent extends StatelessWidget {
   const ExpandedAppBarContent({
@@ -12,9 +13,8 @@ class ExpandedAppBarContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Column(
+    return ExpandedContent(
+      child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
@@ -84,7 +84,7 @@ class ExpandedAppBarContent extends StatelessWidget {
                 ),
                 OutlinedChip(
                   label: movieDetails.spokenLanguages?.first.iso6391
-                          ?.toUpperCase() ??
+                      ?.toUpperCase() ??
                       '',
                   icon: const Icon(
                     Icons.language,
@@ -93,15 +93,9 @@ class ExpandedAppBarContent extends StatelessWidget {
                   ),
                 ),
               ],
-            ),
-          ],
-        ),
-        const SafeArea(
-          child: BackButton(
-            color: Colors.white,
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

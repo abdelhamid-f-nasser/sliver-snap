@@ -14,7 +14,7 @@ class MovieProfilePage extends HookWidget {
   Widget build(BuildContext context) {
     final isCollapsedValueNotifier = useState(false);
 
-    return SnappingCollapsingAppBar(
+    return SliverSnap(
       onCollapseStateChanged: (isCollapsed, scrollingOffset, maxExtent) {
         isCollapsedValueNotifier.value = isCollapsed;
       },
