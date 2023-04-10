@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:example/app/models/movie_details.dart';
+import 'package:example/basic_example/models/index.dart';
 import 'package:flutter/material.dart';
 
 class BlurredBackdropImage extends StatelessWidget {

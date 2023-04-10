@@ -1,5 +1,5 @@
-import 'package:example/app/models/index.dart';
-import 'package:example/app/pages/index.dart';
+import 'package:example/basic_example/models/index.dart';
+import 'package:example/basic_example/movie_profile/index.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

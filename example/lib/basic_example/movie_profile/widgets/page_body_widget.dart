@@ -1,7 +1,5 @@
-
-import 'package:example/app/models/movie_details.dart';
-import 'package:example/app/pages/movie_profile/widgets/favorite_button_widget.dart';
-import 'package:example/app/pages/movie_profile/widgets/watch_now_button_widget.dart';
+import 'package:example/basic_example/models/index.dart';
+import 'package:example/basic_example/movie_profile/index.dart';
 import 'package:flutter/material.dart';
 
 /// Shows the body of the movie details
