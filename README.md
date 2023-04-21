@@ -39,7 +39,6 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
 ) -->
 
 # Table of contents
-- [Table of contents](#table-of-contents)
 - [Preview](#preview)
 - [Installing](#installing)
     - [1. Depend on it](#1-depend-on-it)
@@ -51,6 +50,7 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
     - [1. Collapsed AppBar Content widget](#1-collapsed-appbar-content-widget)
     - [2. Expanded Content widget](#2-expanded-content-widget)
 - [Additional information](#additional-information)
+- [Bugs or Requests](#bugs-or-requests)
 
 
 
