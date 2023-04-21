@@ -198,6 +198,7 @@ This can be used to create a custom `expanded` widget. It has the following prop
 
 
 # Additional information
+Feel free to check the [example](https://github.com/A-Fawzyy/sliver-snap/tree/main/example/lib) for more usage info.
 
 TODO: Tell users more about the package: where to find more information, how to
 contribute to the package, how to file issues, what response they can expect
