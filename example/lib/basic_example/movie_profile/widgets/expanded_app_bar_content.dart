@@ -15,6 +15,9 @@ class ExpandedAppBarContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExpandedContent(
+      leading: const BackButton(
+        color: Colors.white,
+      ),
       child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -96,9 +99,6 @@ class ExpandedAppBarContent extends StatelessWidget {
               ],
           ),
         ],
-      ),
-      leading: const BackButton(
-        color: Colors.white,
       ),
     );
   }
