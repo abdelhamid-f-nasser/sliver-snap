@@ -171,7 +171,7 @@ This can be used to create a custom `collapsedContent` widget. It has the follow
 
 ```dart
       CollapsedAppBarContent(
-        leading: const YourLeadingWidget(),
+        leading: const Text('Leading Widget'),
         title: const Text('title'),
         trailing: SizedBox(
           height: 40,
@@ -189,13 +189,11 @@ This can be used to create a custom `expanded` widget. It has the following prop
 1. leading: This is the `leading` widget specifically for the `expandedContent` Appbar. Don't add the `leading` widget to the `CollapsedAppBarContent` widget or the `SliverSnap` widget, as they might overlap.
 
 ```dart
-  ExpandedContent(
-    child: Column(...),
-    leading: const YourLeadingWidget(),
-  );
-}
+    ExpandedContent(
+      leading: const Text('Leading Widget'),
+      child: const Text('Expanded Content'),
+    );
 ```
-
 
 
 
