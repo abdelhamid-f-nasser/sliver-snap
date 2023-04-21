@@ -4,7 +4,8 @@
 <p style="text-align: center"> 🚀 Sliver Snap is a Flutter package that simplifies the process of adding collapsible and expandable
 app bars to your app. It offers smooth transitions that respond seamlessly to user scrolling and
 snaps to the appropriate mode when the user stops scrolling midway. 💻 It's highly customizable and
-provides a user-friendly experience. Say goodbye to manual implementation and make your Flutter app
+provides a user-friendly experience. <br>
+Say goodbye to manual implementation and make your Flutter app
 more interactive and intuitive with Sliver Snap. 🤯 </p>
 
 <!-- [//]: # (Add Badges here)
