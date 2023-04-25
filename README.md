@@ -4,7 +4,8 @@
 <p style="text-align: center"> 🚀 Sliver Snap is a Flutter package that simplifies the process of adding collapsible and expandable
 app bars to your app. It offers smooth transitions that respond seamlessly to user scrolling and
 snaps to the appropriate mode when the user stops scrolling midway. 💻 It's highly customizable and
-provides a user-friendly experience. Say goodbye to manual implementation and make your Flutter app
+provides a user-friendly experience. <br>
+Say goodbye to manual implementation and make your Flutter app
 more interactive and intuitive with Sliver Snap. 🤯 </p>
 
 <!-- [//]: # (Add Badges here)
@@ -38,7 +39,6 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
 ) -->
 
 # Table of contents
-- [Table of contents](#table-of-contents)
 - [Preview](#preview)
 - [Installing](#installing)
     - [1. Depend on it](#1-depend-on-it)
@@ -50,6 +50,7 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
     - [1. Collapsed AppBar Content widget](#1-collapsed-appbar-content-widget)
     - [2. Expanded Content widget](#2-expanded-content-widget)
 - [Additional information](#additional-information)
+- [Bugs or Requests](#bugs-or-requests)
 
 
 
@@ -170,7 +171,7 @@ This can be used to create a custom `collapsedContent` widget. It has the follow
 
 ```dart
       CollapsedAppBarContent(
-        leading: const YourLeadingWidget(),
+        leading: const Text('Leading Widget'),
         title: const Text('title'),
         trailing: SizedBox(
           height: 40,
@@ -188,18 +189,17 @@ This can be used to create a custom `expanded` widget. It has the following prop
 1. leading: This is the `leading` widget specifically for the `expandedContent` Appbar. Don't add the `leading` widget to the `CollapsedAppBarContent` widget or the `SliverSnap` widget, as they might overlap.
 
 ```dart
-  ExpandedContent(
-    child: Column(...),
-    leading: const YourLeadingWidget(),
-  );
-}
+    ExpandedContent(
+      leading: const Text('Leading Widget'),
+      child: const Text('Expanded Content'),
+    );
 ```
 
 
 
-
 # Additional information
+Feel free to check the [example](https://github.com/A-Fawzyy/sliver-snap/tree/main/example/lib) for more usage info.
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+# Bugs or Requests
+If you encounter any problems feel free to open an [issue](https://github.com/A-Fawzyy/sliver-snap/issues/new?assignees=&labels=&template=feature_request.md&title=). If you feel the library is missing a feature, please raise a [ticket](https://github.com/A-Fawzyy/sliver-snap/issues/new?assignees=&labels=&template=feature_request.md&title=). Pull request are also welcome.
