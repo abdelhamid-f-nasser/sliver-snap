@@ -1,5 +1,23 @@
 
+
+![Sliver-Snap Banner Image](https://i.imgur.com/DaoWrvM.png)
 <h1 align="center">Sliver Snap</h1>
+
+<p align="center">
+<a href="https://flutter.dev">
+  <img src="https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter"
+    alt="Platform" />
+</a>
+<a href="https://pub.dev/packages/sliver_snap">
+  <img src="https://img.shields.io/pub/v/animated_text_kit.svg"
+    alt="Pub Package" />
+</a>
+<a href="https://opensource.org/licenses/MIT">
+  <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
+    alt="License: MIT" />
+</a>
+</p>
+
 
 <p style="text-align: center"> 🚀 Sliver Snap is a Flutter package that simplifies the process of adding collapsible and expandable
 app bars to your app. It offers smooth transitions that respond seamlessly to user scrolling and
@@ -7,36 +25,6 @@ snaps to the appropriate mode when the user stops scrolling midway. 💻 It's hi
 provides a user-friendly experience. <br>
 Say goodbye to manual implementation and make your Flutter app
 more interactive and intuitive with Sliver Snap. 🤯 </p>
-
-<!-- [//]: # (Add Badges here)
-[//]: # (
-<p align="center">
-[//]: # (  <a href="https://flutter.dev">
-[//]: # (    <img src="https://img.shields.io/badge/Platform-Flutter-02569B?logo=flutter"
-[//]: # (      alt="Platform" />
-[//]: # (  </a>
-[//]: # (  <a href="https://pub.dartlang.org/packages/animated_text_kit">
-[//]: # (    <img src="https://img.shields.io/pub/v/animated_text_kit.svg"
-[//]: # (      alt="Pub Package" />
-[//]: # (  </a>
-[//]: # (  <a href="https://github.com/aagarwal1012/Animated-Text-Kit/actions?query=workflow%3ACI">
-[//]: # (    <img src="https://img.shields.io/github/workflow/status/aagarwal1012/Animated-Text-Kit/CI?logo=github"
-[//]: # (      alt="Build Status" />
-[//]: # (  </a>
-[//]: # (  <a href="https://opensource.org/licenses/MIT">
-[//]: # (    <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
-[//]: # (      alt="License: MIT" />
-[//]: # (  </a>
-[//]: # (  <a href="https://github.com/Solido/awesome-flutter#animation">
-[//]: # (    <img src="https://img.shields.io/badge/Awesome-Flutter-FC60A8?logo=awesome-lists"
-[//]: # (      alt="Awesome Flutter" />
-[//]: # (  </a>
-[//]: # (  <a href="https://www.paypal.me/aagarwal1012">
-[//]: # (    <img src="https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal"
-[//]: # (      alt="Donate" />
-[//]: # (  </a>
-[//]: # (</p><br>
-) -->
 
 # Table of contents
 - [Preview](#preview)
