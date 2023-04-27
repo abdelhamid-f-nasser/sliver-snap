@@ -1,3 +1,6 @@
+## 1.0.1 (2023-04-27)
+-  Update README.md
+
 ## 1.0.0 (2023-04-27)
 
 ### Add sliver-snap
