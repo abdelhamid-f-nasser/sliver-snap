@@ -9,7 +9,7 @@
     alt="Platform" />
 </a>
 <a href="https://pub.dev/packages/sliver_snap">
-  <img src="https://img.shields.io/pub/v/animated_text_kit.svg"
+  <img src="https://img.shields.io/badge/pub-1.0.0-blue"
     alt="Pub Package" />
 </a>
 <a href="https://opensource.org/licenses/MIT">
@@ -27,6 +27,7 @@ Say goodbye to manual implementation and make your Flutter app
 more interactive and intuitive with Sliver Snap. 🤯 </p>
 
 # Table of contents
+
 - [Preview](#preview)
 - [Installing](#installing)
     - [1. Depend on it](#1-depend-on-it)
