@@ -9,10 +9,10 @@
     alt="Platform" />
 </a>
 <a href="https://pub.dev/packages/sliver_snap">
-  <img src="https://img.shields.io/badge/pub-1.0.0-blue"
+  <img src="https://img.shields.io/badge/pub-1.0.1-blue"
     alt="Pub Package" />
 </a>
-<a href="https://opensource.org/licenses/MIT">
+<a href="https://github.com/A-Fawzyy/sliver-snap/blob/main/LICENSE">
   <img src="https://img.shields.io/github/license/aagarwal1012/animated-text-kit?color=red"
     alt="License: MIT" />
 </a>
@@ -28,6 +28,7 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
 
 # Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Preview](#preview)
 - [Installing](#installing)
     - [1. Depend on it](#1-depend-on-it)
@@ -58,7 +59,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sliver_snap: ^1.0.0
+  sliver_snap: ^1.0.1
 ```
 
 or you can add the latest version from the command line:
