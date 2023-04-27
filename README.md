@@ -56,9 +56,9 @@ more interactive and intuitive with Sliver Snap. 🤯 </p>
 
 # Preview
 
-| basic | Customizable | Performance |
-| ----- | ------------ | ----------- |
-|       |              |             |
+| basic                                                                     | Performance                                                                    |
+|---------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ![Android Basic](https://i.giphy.com/media/5oqp3lPWEYD59g5VdK/giphy.webp) | ![PPerformance image](https://i.giphy.com/media/wSyFhyBjQWaXqNf5cA/giphy.webp) |
 
 
 # Installing
