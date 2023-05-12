@@ -4,7 +4,7 @@ version: 1.0.1
 homepage: 'https://github.com/A-Fawzyy/sliver-snap'
 
 environment:
-  sdk: '>=2.19.4 <3.0.0'
+  sdk: '>=2.19.4 <=3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
@@ -16,7 +16,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  dart_code_metrics: ^5.7.0
-  lint: ^2.0.1
+  dart_code_metrics: ^5.7.3
+  lint: ^2.1.2
 
 flutter:
