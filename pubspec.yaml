@@ -1,7 +1,10 @@
 name: sliver_snap
 description: Allows you to use powerful snapping slivers with expanded and collapsed bars.
 version: 1.0.1
-homepage: 'https://github.com/A-Fawzyy/sliver-snap'
+repository: https://github.com/A-Fawzyy/sliver-snap
+issue_tracker: https://github.com/A-Fawzyy/sliver-snap/issues
+
+
 
 environment:
   sdk: '>=2.19.4 <=3.0.0'
