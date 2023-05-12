@@ -1,3 +1,6 @@
+## 1.1.1 (2023-05-12)
+- Update dart SDK version constraints.
+
 ## 1.1.0 (2023-05-12)
 - Add support to flutter 3.10 and dart 3.0.0.
 - Add more dev docs.
