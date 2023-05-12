@@ -1,3 +1,9 @@
+## 1.1.0 (2023-05-12)
+- Add support to flutter 3.10 and dart 3.0.0.
+- Add more dev docs.
+- Enable material 3 in the example app.
+- Update README.md.
+
 ## 1.0.1 (2023-04-27)
 -  Update README.md
 
