@@ -22,4 +22,11 @@ dev_dependencies:
   dart_code_metrics: ^5.7.3
   lint: ^2.1.2
 
+screenshots:
+  - description: 'Preview of the basic SliverSnap usage.'
+    path: previews/basic_preview.webp
+  - description: 'Preview of the SliverSnap performance.'
+    path: previews/performance_preview.webp
+
+
 flutter:
