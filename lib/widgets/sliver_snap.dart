@@ -172,6 +172,22 @@ class SliverSnap extends HookWidget {
   /// Defaults to [Curves.easeInOut]
   final Curve? animationCurve;
 
+  /// Whether to show the shadow appropriate for the [elevation] even if the
+  /// content is not scrolled under the [AppBar].
+  ///
+  /// Defaults to false, meaning that the [elevation] is only applied when the
+  /// [AppBar] is being displayed over content that is scrolled under it.
+  ///
+  /// When set to true, the [elevation] is applied regardless.
+  ///
+  /// Ignored when [elevation] is zero.
+  final bool forceElevated;
+
+  /// The elevation of the app bar.
+  ///
+  /// Defaults to `0.0`
+  final double elevation;
+
   const SliverSnap({
     super.key,
     required this.expandedContent,
@@ -195,6 +211,8 @@ class SliverSnap extends HookWidget {
     this.scrollBehavior,
     this.onCollapseStateChanged,
     this.automaticallyImplyLeading = false,
+    this.forceElevated = false,
+    this.elevation = 0.0,
   });
 
   @override
@@ -255,6 +273,8 @@ class SliverSnap extends HookWidget {
         collapsedBackgroundColor: collapsedBackgroundColor,
         expandedBackgroundColor: expandedBackgroundColor,
         isCollapsed: isCollapsedValueNotifier.value,
+        forceElevated: forceElevated,
+        elevation: elevation,
       ),
     );
   }
