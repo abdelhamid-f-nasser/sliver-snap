@@ -9,7 +9,7 @@
     alt="Platform" />
 </a>
 <a href="https://pub.dev/packages/sliver_snap">
-  <img src="https://img.shields.io/badge/pub-1.1.1-blue"
+  <img src="https://img.shields.io/badge/pub-1.2.0-blue"
     alt="Pub Package" />
 </a>
 <a href="https://github.com/A-Fawzyy/sliver-snap/blob/main/LICENSE">
@@ -59,7 +59,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sliver_snap: ^1.1.1
+  sliver_snap: ^1.2.0
 ```
 
 or you can add the latest version from the command line:
@@ -146,7 +146,8 @@ import 'package:sliver_snap/sliver_snap.dart';
 | scrollController          | ScrollController?        | N/A              | Can be used to pass your own `scrollController` to customize the appbar even more.                                                                                                                                                                                                                                                                                                                                                                 |
 | scrollBehavior            | ScrollBehaviour?         | N/A              | How the scrollable widgets behave, either `Material` or `Cupertino` Scrolling behaviors.                                                                                                                                                                                                                                                                                                                                                           |
 | onCollapseStateChanged    | CollapsingStateCallback? | N/A              | This is a callback function that is triggered when the bar is either collapsed or expanded. It can be used to customize the animation and behavior of the widget to better suit your needs.                                                                                                                                                                                                                                                        |
-
+| elevation                 | double                   | 0.0              | The elevation of the app bar                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| forceElevated             | bool                     | false            | Whether to show the shadow appropriate for the `elevation` even if the content is not scrolled under the app bar. Defaults to false, meaning that the `elevation` is only applied when the app bar is being displayed over content that is scrolled under it.                                                                                                                                                                                      |
 
 # Extra Components
 
