@@ -1,3 +1,9 @@
+## 1.2.0 (2023-07-01)
+- Added forceElevated property to control the app bar shadow appearance.
+- Added elevation property to set the app bar elevation.
+These changes allow for more customization options when using SliverSnap widget.
+
+
 ## 1.1.1 (2023-05-12)
 - Update dart SDK version constraints.
 
