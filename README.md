@@ -9,7 +9,7 @@
     alt="Platform" />
 </a>
 <a href="https://pub.dev/packages/sliver_snap">
-  <img src="https://img.shields.io/badge/pub-1.2.0-blue"
+  <img src="https://img.shields.io/badge/pub-2.0.0-blue"
     alt="Pub Package" />
 </a>
 <a href="https://github.com/A-Fawzyy/sliver-snap/blob/main/LICENSE">
@@ -59,7 +59,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  sliver_snap: ^1.2.0
+  sliver_snap: ^2.0.0
 ```
 
 or you can add the latest version from the command line:
