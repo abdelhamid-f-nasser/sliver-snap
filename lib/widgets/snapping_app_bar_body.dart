@@ -66,6 +66,7 @@ class SnappingAppBarBody extends StatelessWidget {
               bottom: bottom,
               expandedHeight: expandedContentHeight,
               collapsedHeight: collapsedBarHeight,
+              toolbarHeight: collapsedBarHeight,
               centerTitle: false,
               pinned: pinned,
               elevation: elevation,
