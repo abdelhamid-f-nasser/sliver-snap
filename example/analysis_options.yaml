@@ -3,8 +3,6 @@ include: package:lint/analysis_options.yaml
 analyzer:
   strong-mode:
     implicit-casts: true
-  plugins:
-    dart_code_metrics
   errors:
     avoid_print: error
     must_be_immutable: error
@@ -39,26 +37,6 @@ analyzer:
     avoid_classes_with_only_static_members: ignore
     depend_on_referenced_packages: ignore
     avoid_dynamic_calls: ignore
-
-dart_code_metrics:
-  rules:
-    - avoid-dynamic: true
-    - avoid-redundant-async: true
-    - avoid-passing-async-when-sync-expected: true
-    - avoid-redundant-async: true
-    - avoid-unnecessary-type-assertions: true
-    - avoid-unnecessary-type-casts: true
-    - avoid-unrelated-type-assertions: true
-    - avoid-unused-parameters: true
-    - avoid-nested-conditional-expressions: true
-    - newline-before-return: true
-    - no-boolean-literal-compare: true
-    - no-empty-block: true
-    - prefer-trailing-comma: true
-    - prefer-conditional-expressions: true
-    - no-equal-then-else: true
-    - prefer-moving-to-variable: true
-    - prefer-match-file-name: true
 
 linter:
   rules:
