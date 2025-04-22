@@ -1,6 +1,6 @@
 name: sliver_snap
 description: Allows you to use powerful snapping slivers with expanded and collapsed bars.
-version: 2.0.0
+version: 2.1.0
 repository: https://github.com/abdelhamid-f-nasser/sliver-snap
 issue_tracker: https://github.com/abdelhamid-f-nasser/sliver-snap/issues
 
