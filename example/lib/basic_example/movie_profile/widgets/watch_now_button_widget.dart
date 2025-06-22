@@ -10,11 +10,11 @@ class WatchNowButtonWidget extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       style: ButtonStyle(
-        padding: MaterialStateProperty.all(
+        padding: WidgetStateProperty.all(
           EdgeInsets.zero,
         ),
-        elevation: MaterialStateProperty.all(0),
-        shape: MaterialStateProperty.all(
+        elevation: WidgetStateProperty.all(0),
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(5.0),
           ),
