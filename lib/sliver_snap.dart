@@ -13,7 +13,7 @@
 ///
 /// > See the example directory for a complete sample app that demonstrates how
 /// to use the [SliverSnap] widget.
-library sliver_snap;
+library;
 
 export 'sliver_snap.dart';
 export 'widgets/index.dart';
