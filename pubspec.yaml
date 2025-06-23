@@ -1,6 +1,6 @@
 name: sliver_snap
 description: Allows you to use powerful snapping slivers with expanded and collapsed bars.
-version: 2.1.0
+version: 2.1.1
 repository: https://github.com/abdelhamid-f-nasser/sliver-snap
 issue_tracker: https://github.com/abdelhamid-f-nasser/sliver-snap/issues
 
@@ -13,12 +13,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_hooks: ^0.20.3
+  flutter_hooks: ^0.21.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  lint: ^2.2.0
+  lint: ^2.8.0
 
 screenshots:
   - description: 'Preview of the basic SliverSnap usage.'

@@ -1,3 +1,7 @@
+## 2.1.1 (2025-06-23)
+
+- Update dependencies to latest versions
+
 ## 2.1.0 (2025-04-22)
 
 - Fix a bug where the app bar would not collapse properly when using a custom scroll controller.
