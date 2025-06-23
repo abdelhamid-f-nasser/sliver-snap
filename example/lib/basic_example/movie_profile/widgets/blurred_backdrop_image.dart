@@ -27,7 +27,7 @@ class BlurredBackdropImage extends StatelessWidget {
         filter: ImageFilter.blur(sigmaX: 7.0, sigmaY: 7.0),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.0),
+            color: Colors.white.withValues(alpha: 0.0),
           ),
         ),
       ),
